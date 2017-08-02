@@ -35,7 +35,7 @@ class Hermes():
 
     def settings(self):
 
-        # We are creating settings fill
+        # We are creating settings file
         # that will check if we have today
         # received a fresh poetry
 
@@ -48,7 +48,7 @@ class Hermes():
                 date = None
             else:
                 date = today
-        except:
+        except NameError:
             date = today
 
         if date != None:
